@@ -1,0 +1,23 @@
+{
+    "playing": {
+        "vid_url": "https://www.youtube.com/watch?v=X0x7sxpCitE",
+        "vid_title": "The Algorithm - userspace (Official Music Video)",
+        "vid_author": "FiXT",
+        "vid_channel_url": "http://www.youtube.com/user/Fixtmusic",
+        "thumb": "https://i.ytimg.com/vi_webp/X0x7sxpCitE/maxresdefault.webp",
+        "tgt_url": "https://r4---sn-3u-bh2sr.googlevideo.com/videoplayback?expire=1596134594&ei=YsAiX6O1HJSolQTr5qvwBA&ip=125.129.34.186&id=o-AL3A3PY7eaBeLlZfnW08RkDByR8xe0jkRfP57QDflFz3&itag=249&source=youtube&requiressl=yes&mh=QU&mm=31%2C26&mn=sn-3u-bh2sr%2Csn-i3b7knse&ms=au%2Conr&mv=m&mvi=4&pl=17&initcwndbps=853750&vprv=1&mime=audio%2Fwebm&gir=yes&clen=2496752&dur=376.201&lmt=1459445556783132&mt=1596112890&fvip=4&keepalive=yes&fexp=23883098&c=WEB&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgWwE8r5qTKluQYwiJma8rmEIubDFs3UmZaq4GxPV7MG0CIFDY7bAMsCVOEwv6RzAcEKfY2LSM4-xf1JvvFrbl02NF&sig=AOq0QJ8wRAIgQqkk6BnmFC8eZpb9X7Y6tFkIF1j1gp-kJReOfKqs-vICIGK4hipdi4R8RBFlb72JVehRsaT8KPhlK_YvBvGFboRQ&ratebypass=yes",
+        "vol": 0.3,
+        "req_by": 288302173912170497,
+        "loop": false,
+        "random": false
+    },
+    "214323": {
+        "vid_url": "https://www.youtube.com/watch?v=1SAXBLZLYbA",
+        "vid_title": "Teminite X Chime X PsoGnar - Monster",
+        "vid_author": "Teminite",
+        "vid_channel_url": "http://www.youtube.com/user/TeminiteMusic",
+        "thumb": "https://i.ytimg.com/vi_webp/1SAXBLZLYbA/maxresdefault.webp",
+        "tgt_url": "https://r5---sn-3u-bh2es.googlevideo.com/videoplayback?expire=1596134602&ei=asAiX861FsWmlQTixbq4CA&ip=125.129.34.186&id=o-AOmdReRUzHD04HprUHbA0t0ey_maIMjOoCFpuIs1GRJO&itag=249&source=youtube&requiressl=yes&mh=H_&mm=31%2C26&mn=sn-3u-bh2es%2Csn-i3b7kn7k&ms=au%2Conr&mv=m&mvi=5&pl=17&initcwndbps=817500&vprv=1&mime=audio%2Fwebm&gir=yes&clen=1757747&dur=300.021&lmt=1542400761656794&mt=1596112951&fvip=5&keepalive=yes&fexp=23883098&c=WEB&txp=5511222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIgEJzwE6b-XZLqSKOWfZ6jV7yhTK0U9agAqEHYgf4FAD4CIQDqNeyFqyhOO7SJubgv_sjgR2HarQoSMxkEERhSoFI9hg%3D%3D&sig=AOq0QJ8wRQIgX8jjeYIsFJbK61dukvJLxCPkLujrJrTYKtYvpc0eRmsCIQD-oCOUf7WU7oVqppnmi3yIzWtq5MOhGWWfUU1bS37onw==&ratebypass=yes",
+        "req_by": 288302173912170497
+    }
+}

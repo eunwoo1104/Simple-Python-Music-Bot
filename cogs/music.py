@@ -282,7 +282,7 @@ class Music(commands.Cog):
         await ctx.send(f"{ctx.author.mention} 볼륨이 `{vol}%`로 변경되었습니다.")
         await update_queue(ctx.guild.id, queue)
 
-    @commands.command(name="대기리스트", description="현재 대기 리스트를 보여줍니다.", aliases=["재생리스트", "pl", "ql", "queuelist", "playlist", "비", "ㅔㅣ"])
+    @commands.command(name="대기리스트", description="현재 대기 리스트를 보여줍니다.", aliases=["대기열", "재생리스트", "pl", "ql", "queuelist", "playlist", "비", "ㅔㅣ"])
     async def queue_list(self, ctx):
         queue_list = await get_queue(ctx.guild.id)
         if bool(queue_list) is False:
