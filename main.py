@@ -1,10 +1,7 @@
 """
-discord.py 봇 탬플릿 by eunwoo1104 (Discord: eunwoo1104#9600)
-MIT 라이센스를 지키는 한 자유롭게 이용이 가능합니다.
-이 템플릿으로 봇을 제작하기 전에 타입 힌트와 클래스와 비동기 정도는 알고 시작하는 것을 추천합니다.
-봇을 제작할 때는 디코파이 문서를 참고하세요.
-discord.py 문서: https://discordpy.readthedocs.io/en/latest/index.html
-번역중인 문서: https://discordpy.cpbu.xyz/index.html
+Simple-Python-Music-Bot
+by eunwoo1104
+
 코드에 문제가 있을 경우 자유롭게 Issue나 Pull Request를 넣어주세요.
 """
 import asyncio
