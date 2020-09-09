@@ -87,7 +87,7 @@ async def on_ready():
     """
     봇이 실행될 때 작동하는 코드입니다.
     **주의!**: 이 코드는 한번만 실행되는 것이 아니라, 연결이 끊어진 이후에 다시 실행될 수 있습니다.
-    (출처: discord.py 문서 https://discordpy.cpbu.xyz/api.html#discord.on_ready)
+    (discord.py 문서 https://discordpy.cpbu.xyz/api.html#discord.on_ready 참고)
     """
     logger.info("Bot online.")
 
@@ -122,7 +122,7 @@ async def _cog_panel(ctx):
     selected_num = 0
 
     def check(reaction, user):
-        return user == ctx.author and str(reaction) in emoji_list
+        return user == ctx.author and str(reaction) in emoji_list and reaction.message.id == msg.id
 
     while True:
         tgt_embed = base_embed.copy()
@@ -132,9 +132,12 @@ async def _cog_panel(ctx):
             tgt_embed.add_field(name=k, value=f"상태: {'로드됨' if v else '언로드됨'}", inline=False)
         await msg.edit(content=None, embed=tgt_embed)
         try:
-            reaction, user = await bot.wait_for("reaction_add", check=check, timeout=60)
+            reaction = (await bot.wait_for("reaction_add", check=check, timeout=60))[0]
         except asyncio.TimeoutError:
-            await msg.clear_reactions()
+            try:
+                await msg.clear_reactions()
+            except discord.Forbidden:
+                [await msg.remove_reaction(x) for x in emoji_list]
             await msg.edit(content="Cog 관리 패널이 닫혔습니다.", embed=None)
             break
         if str(reaction) == down:
@@ -175,12 +178,14 @@ async def _cog_panel(ctx):
             await msg.clear_reactions()
             await msg.edit(content="Cog 관리 패널이 닫혔습니다.", embed=None)
             break
-        await msg.remove_reaction(reaction, ctx.author)
+        try:
+            await msg.remove_reaction(reaction, ctx.author)
+        except discord.Forbidden:
+            pass
 
 
 # Cog를 불러오는 스크립트
-for fn in [f"cogs.{x.replace('.py', '')}" for x in os.listdir("./cogs") if x.endswith('.py')]:
-    bot.load_extension(fn)
+[bot.load_extension(f"cogs.{x.replace('.py', '')}") for x in os.listdir("./cogs") if x.endswith('.py')]
 
 # 봇 상태 메시지를 변경하는 코드 준비
 loop.create_task(change_presence())
