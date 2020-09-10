@@ -33,7 +33,7 @@ class Error(commands.Cog):
         elif isinstance(error, commands.CheckFailure):
             embed.add_field(name="CheckFailure", value="당신은 이 명령어를 사용할 수 없습니다.")
         elif isinstance(error, commands.CommandOnCooldown):
-            embed.add_field(name="CommandOnCooldown", value='쿨다운이 아직 {:.2f}초 남았습니다.'.format(error.retry_after))
+            embed.add_field(name="CommandOnCooldown", value=f"쿨다운이 아직 {error.retry_after:.2f}초 남았습니다.")
         elif isinstance(error, commands.MissingRequiredArgument):
             embed.add_field(name="MissingRequiredArgument", value=f"누락된 필수 항목이 있습니다. (`{error.param.name}`)")
         else:
