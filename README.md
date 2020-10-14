@@ -4,4 +4,4 @@
 >
 다운로드하지 않고 스트리밍으로 재생하는 간단한 뮤직봇 소스코드입니다.  
 FFMpeg가 필요합니다.  
-[__DM으로 질문하기 전에 FAQ를 읽어주세요__](https://github.com/eunwoo1104/Simple-Python-Music-Bot/faq/faq.md)
+[__DM으로 질문하기 전에 FAQ를 읽어주세요__](https://github.com/eunwoo1104/Simple-Python-Music-Bot/blob/master/faq/faq.md)
